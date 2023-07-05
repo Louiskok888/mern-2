@@ -33,7 +33,7 @@ const {setUserInfo, userInfo} = useContext(UserContext)
           <>
           <span className="username">Hello, {username}</span>
           <Link to="/create">Create new post</Link>
-          <a onClick={logout}>Logout</a>
+          <button onClick={logout}>Logout</button>
           </>
         )}
         {!username && (
