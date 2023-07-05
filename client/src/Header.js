@@ -15,7 +15,7 @@ const {setUserInfo, userInfo} = useContext(UserContext)
   }, [setUserInfo])
 
   function logout() {
-    fetch('http://localhost:4000/logout', {
+    fetch('https://mern-2-api.onrender.com/logout', {
       credentials: 'include',
       method: 'POST',
     })
