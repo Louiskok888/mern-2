@@ -22,7 +22,7 @@ export default function EditPost(){
                 setContent(postInfo.content)
             })
         })
-    },[])
+    },[id])
 
     async function updatePost(ev){
         ev.preventDefault()
