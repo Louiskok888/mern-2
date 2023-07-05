@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect,} from "react"
 import {Link} from "react-router-dom"
 import { UserContext } from "./UserContext"
 
@@ -12,7 +12,7 @@ const {setUserInfo, userInfo} = useContext(UserContext)
         setUserInfo(userInfo)
       })
      })
-  }, [])
+  }, [setUserInfo])
 
   function logout() {
     fetch('http://localhost:4000/logout', {
