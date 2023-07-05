@@ -25,7 +25,7 @@ const {setUserInfo, userInfo} = useContext(UserContext)
   const username = userInfo?.username
     return(
         <header>
-        <Link to="/" className="logo" href="/">
+        <Link to="/" className="logo">
           MyBlog
         </Link>
         <nav>
