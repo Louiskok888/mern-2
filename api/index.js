@@ -69,7 +69,7 @@ app.post("/logout", (req, res) => {
   res.cookie("token", "").json("ok");
 });
 
-
+app.use(cors({ credentials: true, origin: "https://mern-2-api.onrender.com/" }));
 
 app.post("/post", uploadMiddleware.single("file"), async (req, res) => {
   const { originalname, path } = req.file;
