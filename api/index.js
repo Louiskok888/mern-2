@@ -21,7 +21,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
-app.use(cors({ credentials: true, origin: "https://mern-2-api.onrender.com/" }));
 
 mongoose.connect(
   "mongodb+srv://louiskok8888:kok888@cluster0.pj8b9we.mongodb.net/?retryWrites=true&w=majority"
