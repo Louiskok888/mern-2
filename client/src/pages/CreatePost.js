@@ -32,7 +32,7 @@ export default function CreatePost() {
   }
  
   return (
-    <form onSubmit={createNewPost}>
+    <form onSubmit={createNewPost} encType="multipart/form-data">
       <input
         type="title"
         placeholder={"Title"}
