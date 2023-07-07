@@ -18,7 +18,7 @@ export default function CreatePost() {
     data.append("file", files[0]);
     ev.preventDefault();
 
-    const response = await fetch("https://mern-2-api.onrender.com/post", {
+    const response = await fetch("https://mern-2-api.onrender.com/create", {
       method: "POST",
       body: data,
       credentials: 'include', 
