@@ -11,6 +11,7 @@ export default function CreatePost() {
   const [redirect, setRedirect] = useState(false);
   
   async function createNewPost(ev) {
+    console.log("button clicked")
     const data = new FormData();
     data.append("title", title);
     data.append("summary", summary);
