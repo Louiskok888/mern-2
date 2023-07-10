@@ -10,14 +10,14 @@ const cookieParser = require("cookie-parser");
 const multer = require("multer");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const fs = require("fs");
-
 const salt = bcrypt.genSaltSync(10);
 const secret = "12345";
 
+app.use(express.json());
 app.use(cors({ credentials: true, origin: ["https://wonderful-zabaione-8dff44.netlify.app", "https://mern-2-api.onrender.com"] }));
 
 
-app.use(express.json());
+
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
