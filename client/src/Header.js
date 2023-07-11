@@ -12,7 +12,7 @@ const {setUserInfo, userInfo} = useContext(UserContext)
         setUserInfo(userInfo)
       })
      })
-  }, [])
+  }, [setUserInfo])
 
   function logout() {
     fetch('https://mern-2-api.onrender.com/logout', {
