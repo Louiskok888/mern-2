@@ -26,6 +26,14 @@ mongoose.connect(
   "mongodb+srv://louiskok8888:kok888@cluster0.pj8b9we.mongodb.net/?retryWrites=true&w=majority"
 );
 
+app.get("/profile", (req, res) => {
+  const { token } = req.cookies;
+  jwt.verify(token, secret, {}, (err, info) => {
+    if (err) throw err;
+    res.json(info);
+  });
+});
+
 app.post("/register", async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -37,14 +45,6 @@ app.post("/register", async (req, res) => {
   } catch (e) {
     res.status(400).json(e);
   }
-});
-
-app.get("/profile", (req, res) => {
-  const { token } = req.cookies;
-  jwt.verify(token, secret, {}, (err, info) => {
-    if (err) throw err;
-    res.json(info);
-  });
 });
 
 app.post("/login", async (req, res) => {
