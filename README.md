@@ -24,6 +24,7 @@ In the "api" and "client" directory, you can run in separate terminals:
 
 ### Installation:
 cd api folder in the terminal and type `npm install`.
+<br/>
 cd client folder in the terminal and type `npm install`.
 
 
