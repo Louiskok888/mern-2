@@ -11,7 +11,7 @@ const multer = require("multer");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const fs = require("fs");
 const salt = bcrypt.genSaltSync(10);
-const secret = "12345";
+const secret = "asdfe45we45w345wegw345werjktjwertkj";
 
 
 app.use(cors({ credentials: true, origin: ["https://wonderful-zabaione-8dff44.netlify.app", "https://mern-2-api.onrender.com"] }));
