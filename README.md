@@ -6,7 +6,7 @@ A blog app that is able to log into your personal account and create blogs at th
 
 website link ==> https://wonderful-zabaione-8dff44.netlify.app/
 <br/>
-(p/s : the create post function still unable to solve, unable to fetch the data, can download the zip file to open it in the local host 3000 & local host 4000)
+(p/s : the create post function still unable to solve, unable to fetch the data, can download the zip file to open it in the local host 3000(frontend) & local host 4000(backend))
 
 ## Technologies Used
 
